@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OrbitalGrid — Sistema Inteligente de Distribuição Energética</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <nav id="menu-navegacao">
+    <a href="#" class="logo-menu"> OrbitalGrid</a>
+    <button id="botao-hamburguer" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="lista-menu">
+      <li><a href="#secao-sobre">Sobre</a></li>
+      <li><a href="#secao-galeria">Galeria</a></li>
+      <li><a href="#secao-quiz">Quiz</a></li>
+      <li><a href="#secao-contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <header id="tela-inicial">
+    <div class="conteudo-tela-inicial">
+      <p class="subtitulo-hero">Sistema Inteligente Inspirado em Infraestrutura Espacial</p>
+      <h1 class="titulo-hero">Orbital<span class="destaque">Grid</span></h1>
+      <p class="descricao-hero">
+        Monitoramento e distribuição energética urbana inspirados na precisão da infraestrutura espacial.
+      </p>
+      <a href="#secao-galeria" class="botao-explorar">Explorar →</a>
+    </div>
+  </header>
+
+  <section id="secao-sobre">
+    <h2 class="titulo-secao">Personalize o <span class="destaque">Tema</span></h2>
+    <p class="subtitulo-secao">Escolha entre 3 modos visuais do OrbitalGrid</p>
+
+
+    <div id="seletor-tema"></div>
+
+    <div class="grade-cartoes">
+
+      <div class="cartao aparece-ao-rolar">
+        <h3 class="titulo-cartao">Monitoramento Orbital</h3>
+        <p class="texto-cartao">Satélites detectam padrões de calor e desperdício energético em tempo real.</p>
+      </div>
+
+      <div class="cartao aparece-ao-rolar">
+        <h3 class="titulo-cartao">Distribuição Inteligente</h3>
+        <p class="texto-cartao">Algoritmos de IA redistribuem energia eliminando gargalos e falhas automaticamente.</p>
+      </div>
+
+      <div class="cartao aparece-ao-rolar">
+        <h3 class="titulo-cartao">Sustentabilidade</h3>
+        <p class="texto-cartao">Redução do desperdício energético urbano inspirada na eficiência das missões espaciais.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="secao-galeria">
+    <h2 class="titulo-secao">Galeria <span class="destaque">Espacial</span></h2>
+    <p class="subtitulo-secao">Tecnologia espacial que inspira o OrbitalGrid</p>
+
+    <div id="area-slideshow" class="aparece-ao-rolar"></div>
+  </section>
+
+  <section id="secao-quiz">
+    <h2 class="titulo-secao">Quiz <span class="destaque">OrbitalGrid</span></h2>
+    <p class="subtitulo-secao">Teste seus conhecimentos sobre energia espacial e sustentabilidade — 10 perguntas</p>
+
+
+    <div id="area-quiz" class="aparece-ao-rolar"></div>
+  </section>
+
+
+  <section id="secao-contato">
+    <h2 class="titulo-secao">Entre em <span class="destaque">Contato</span></h2>
+    <p class="subtitulo-secao">Tem interesse no OrbitalGrid? Fale conosco</p>
+
+    <form class="formulario-contato" data-validar>
+
+      <div class="grupo-campo">
+        <label for="nome">Nome completo *</label>
+        <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome" />
+      </div>
+
+      <div class="grupo-campo">
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" required placeholder="seu@email.com" />
+      </div>
+
+      <div class="grupo-campo">
+        <label for="assunto">Assunto *</label>
+        <select id="assunto" name="assunto" required>
+          <option value="">Selecione um assunto</option>
+          <option value="parceria">Parceria</option>
+          <option value="demo">Solicitar demonstração</option>
+          <option value="imprensa">Imprensa</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+
+      <div class="grupo-campo">
+        <label for="mensagem">Mensagem *</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required minlength="10"
+          placeholder="Descreva sua mensagem..."></textarea>
+      </div>
+
+      <button type="submit" class="botao-enviar"> Enviar Mensagem</button>
+
+    </form>
+  </section>
+
+
+  <footer id="rodape">
+    <p>© 2026 OrbitalGrid — Projeto Acadêmico | Web Development</p>
+  </footer>
+
+  <script src="./javascript.js"></script>
+</body>
+
+</html>
